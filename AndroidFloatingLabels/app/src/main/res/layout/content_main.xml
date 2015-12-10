@@ -69,9 +69,8 @@
         android:layout_below="@+id/input_layout_password"
         android:layout_marginTop="40dp"
         android:background="@color/colorPrimary"
-        android:text="@string/btn_sign_up"
         android:onClick="btnSignUpOnClick"
+        android:text="@string/btn_sign_up"
         android:textColor="@android:color/white" />
-
 
 </RelativeLayout>
