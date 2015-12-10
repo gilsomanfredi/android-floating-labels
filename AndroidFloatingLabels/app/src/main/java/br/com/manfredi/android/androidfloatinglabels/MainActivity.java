@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
 
         btnSignUp = (Button) findViewById(R.id.btn_sign_up);
 
-        etName.addTextChangedListener(new MyTextWatcher(etName));
-        etEmail.addTextChangedListener(new MyTextWatcher(etEmail));
-        etPassword.addTextChangedListener(new MyTextWatcher(etPassword));
+        etName.addTextChangedListener(new TextWatcherImpl(etName));
+        etEmail.addTextChangedListener(new TextWatcherImpl(etEmail));
+        etPassword.addTextChangedListener(new TextWatcherImpl(etPassword));
 
     }
 
@@ -126,11 +126,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private class MyTextWatcher implements TextWatcher {
+    private class TextWatcherImpl implements TextWatcher {
 
         private View view;
 
-        private MyTextWatcher(View view) {
+        private TextWatcherImpl(View view) {
             this.view = view;
         }
 
